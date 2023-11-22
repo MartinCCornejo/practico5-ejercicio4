@@ -12,9 +12,9 @@ const crearReloj = () => {
     const minutos = (fecha.getMinutes() < 10) ? `0${fecha.getMinutes()}` : fecha.getMinutes();
     const segundos = (fecha.getSeconds() < 10) ? `0${fecha.getSeconds()}` : fecha.getSeconds();
 
-    reloj.children[0].innerHTML = `<p class="fs-4">${dias[fecha.getDay()]} ${fecha.getDate()} de ${meses[fecha.getMonth()]} del ${fecha.getFullYear()}</p>`;
+    reloj.children[0].innerHTML = `<h3>${dias[fecha.getDay()]} ${fecha.getDate()} de ${meses[fecha.getMonth()]} del ${fecha.getFullYear()}</h3>`;
     
-    reloj.children[1].innerHTML = `<p class="fs-1">${horas} : ${minutos} : ${segundos}</p>`;
+    reloj.children[1].innerHTML = `<p class="display-2">${horas} : ${minutos} <span class="display-6">${segundos}</span></p>`;
 }
 
 // Iniciamos un intervalo para que la hora se actualice cada 1 segundo 
