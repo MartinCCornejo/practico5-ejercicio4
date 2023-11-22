@@ -6,4 +6,18 @@ body{
 
 main{
     flex-grow: 1;
+    background: url(../img/img-fondo.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reloj{
+    color: #eee;
+    font-weight: 700;
+}
+
+.bg-reloj{
+    background: rgba(0,0,0,0.7);
 }
